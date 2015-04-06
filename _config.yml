@@ -1,9 +1,9 @@
 # Site settings
-title: GBG São José dos Campos
-email: gbgsjc@gmail.com
-description: GBG São José dos Campos.
+title: GEG São José dos Campos
+email: gegsjcampos@gmail.com
+description: Grupo de Educadores Google de São José dos Campos.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gbgsjc.com" # the base hostname & protocol for your site
+url: "http://gegsjcampos.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
