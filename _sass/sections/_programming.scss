@@ -1,0 +1,53 @@
+.programming {
+  padding-top: 0;
+
+  .header {
+    display: inline-block;
+    width: 100%;
+    height: 8em;
+    background-color: #edc43a;
+    color: #fff;
+
+    .content {
+      height: 100%;
+      display: table;
+    }
+
+    h1 {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 300;
+    }
+  }
+
+  .talk {
+    display: table;
+    padding: 2em 0;
+    width: 100%;
+    @include clearfix;
+
+    .time, .subject {
+      vertical-align: middle;
+      float: none;
+    }
+
+    .time time, .subject .topic {
+      font-size: 2.2em;
+      font-weight: 300;
+      color: #414243;
+    }
+
+    .subject .speaker {
+      font-size: 1.6em;
+      font-weight: 400;
+      color: #5a90df;
+    }
+
+    .subject .notes {
+      color: #c3c3c3;
+      font-weight: 200;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.main {
+  min-height: 100%;
+}
+
+.content {
+  width: 100%;
+  padding: 15px;
+}
+
+.register {
+  @include background-color(#3366cc);
+}

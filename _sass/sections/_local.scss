@@ -1,0 +1,53 @@
+.local {
+  background-image: url("/images/foto_local.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  > .content {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .header {
+    display: inline-block;
+    width: 100%;
+    height: 8em;
+    background-color: #ba3a57;
+    color: #fff;
+
+    .content {
+      height: 100%;
+      display: table;
+    }
+
+    h1 {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 300;
+    }
+  }
+
+  address {
+    color: #fff;
+    max-width: 700px;
+
+    .title {
+      font-size: 1.875em;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    .description {
+      font-size: 1.25em;
+      font-weight: 300;
+    }
+  }
+
+  .look-map {
+    margin-top: 4em;
+    @include background-color(#FFC900);
+  }
+}

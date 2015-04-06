@@ -1,0 +1,35 @@
+.main-footer {
+  background: #e5e5e5;
+  display: inline-block;
+  width: 100%;
+  padding: 4em 0;
+
+  .footer-menu {
+    ul {
+      li {
+        display: block;
+
+        a {
+          text-decoration: none;
+          color: #868686;
+          font-size: 1.125em;
+        }
+      }
+
+      li + li {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .google {
+    margin-top: 2em;
+    text-align: center;
+
+    .google-logo {
+      width: 50%;
+      min-width: 75px;
+      max-width: 150px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin text-shadow($left, $top, $blur, $color) {
+  text-shadow: $left $top $blur $color;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow: $top $left $blur $color #{$inset};
+  -moz-box-shadow: $top $left $blur $color #{$inset};
+  -ms-box-shadow: $top $left $blur $color #{$inset};
+  -o-box-shadow: $top $left $blur $color #{$inset};
+  box-shadow: $top $left $blur $color #{$inset};
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+@mixin background-color($bg-color) {
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: lighten($bg-color, 5%);
+  }
+
+  &:active {
+    @include box-shadow(0, 3px, 5px, rgba(0,0,0,.125) inset);
+  }
+}

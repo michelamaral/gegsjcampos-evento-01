@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base/variables.scss",
+  "base/mixins.scss",
+  "base/basic.scss",
+  "base/media.scss",
+  "base/reset.scss",
+  "core/buttons.scss",
+  "core/footer.scss",
+  "core/header.scss",
+  "core/menu.scss",
+  "sections/local.scss",
+  "sections/presentation.scss",
+  "sections/programming.scss",
+  "sections/speakers.scss",
+  "sections/sponsors.scss"
+;
