@@ -14,8 +14,19 @@
   article {
     padding: 0 2em;
 
+    .date {
+      font-size: 3em;
+      font-weight: 300;
+    }
+
     .title {
       font-size: 3em;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .city {
+      font-size:2em;
       font-weight: 300;
     }
 
